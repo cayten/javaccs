@@ -2,7 +2,7 @@ package day08_ifStatements;
 
 import java.util.Scanner;
 
-public class C03_NestedIsElse {
+public class C03_NestedIfElse {
     public static void main(String[] args) {
 
       /*

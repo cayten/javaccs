@@ -8,7 +8,7 @@ public class C06_Scanner {
 
         Scanner scan=new Scanner(System.in);
 
-        System.out.println("Lutfen isim, soyisim ve yasinizi giriniz /naralard Enter tusuna basiniz:");
+        System.out.println("Lutfen isim, soyisim ve yasinizi giriniz /aralarda Enter tusuna basiniz:");
         String isim =scan.nextLine();
         int yas=scan.nextInt();
         System.out.println(" verilen bilgiler :" + isim + "" + " "+ yas);
