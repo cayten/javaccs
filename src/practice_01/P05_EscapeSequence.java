@@ -37,11 +37,12 @@ public class C05_EscapeSequence {
 
 
 
-        //Soru-4 : "Zaruret" insani 'kasif'  yapar   yazdiriniz
+        //Soru-4 : "Zaruret" insani
+        //         'kasif'  yapar   yazdiriniz
 
         // sonraki "TechProEd ile java cok kolay ..." ifadesi  3 satir sonra ve satir basindan 1 tab ileride yazilsin, hepsini tek kod satırı ile yazdiriniz.
 
-        System.out.println("\"Zaruret\" insani \n\'kasif\' yapar");
+        System.out.println("\"Zaruret\" insani \n\'kasif\' yapar\n\n\n\t\"TechProEd ile java cok kolay...\"");
 
 
 
