@@ -1,6 +1,8 @@
 package practice_01;
 
-public class C07_Converting {
+import java.util.Scanner;
+
+public class P07_Converting {
     public static void main(String[] args) {
         /*
    galonu litreye ceviren bir java programi yaziniz
@@ -24,6 +26,13 @@ public class C07_Converting {
 
 
         System.out.println(sonuc);
+
+
+        Scanner scan= new Scanner(System.in);
+
+        System.out.println("bir fahrenayt degeri giriniz: ");
+        int fahrnyt=scan.nextInt();
+        System.out.println("girdiginiz deger: " + fahrnyt+ " " + "derece olarak: " + (fahrnyt-32)*5/9);
 
 
     }

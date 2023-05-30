@@ -15,17 +15,17 @@ veya hicbir if body'si calismayabilir
         int a = 20;
         if (a > 10) {
 
-            System.out.println("sayimiz sifirdan buyuktur");
+            System.out.println("sayimiz ondan buyuktur");
         }
 
         if (a < 10) {
 
-            System.out.println("sayimiz sifirdan kucuktur");
+            System.out.println("sayimiz ondan kucuktur");
         }
 
         if (a == 10) {
 
-            System.out.println("sayimiz sıfıra esittir");
+            System.out.println("sayimiz ondan esittir");
         }
     }
 }
