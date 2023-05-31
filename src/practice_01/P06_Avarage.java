@@ -1,6 +1,6 @@
 package practice_01;
 
-public class C06_Avarage {
+public class P06_Avarage {
     public static void main(String[] args) {
         /*
    double num1 = 23.4;

@@ -29,7 +29,6 @@ public class C01_WrapperClasses {
         System.out.println(no.equals("123456a"));
         System.out.println(no.equals("12345"));
 
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen 5 basamakli bir sayı giriniz");
         String sayi = scan.next();

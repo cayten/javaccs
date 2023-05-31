@@ -1,6 +1,6 @@
 package practice_01;
 
-public class C04_JavaVariables {
+public class P04_JavaVariables {
     public static void main(String[] args) {
 
         // Intializing variables

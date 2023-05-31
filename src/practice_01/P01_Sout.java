@@ -1,6 +1,6 @@
 package practice_01;
 
-public class C01_Sout {
+public class P01_Sout {
 
     public static void main(String[] args) {
 

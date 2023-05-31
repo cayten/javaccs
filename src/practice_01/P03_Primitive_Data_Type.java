@@ -1,6 +1,6 @@
 package practice_01;
 
-public class C03_Primitive_Data_Type {
+public class P03_Primitive_Data_Type {
 
     public static void main(String[] args) {
         /*

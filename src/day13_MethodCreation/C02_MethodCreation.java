@@ -1,6 +1,6 @@
 package day13_MethodCreation;
 
-public class C03_MethodCreation {
+public class C02_MethodCreation {
     public static void main(String[] args) {
 
 // input olarak verilen iki integer i toplayip sonucunu yazdiran

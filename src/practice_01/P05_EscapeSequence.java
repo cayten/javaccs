@@ -1,6 +1,6 @@
 package practice_01;
 
-public class C05_EscapeSequence {
+public class P05_EscapeSequence {
     public static void main(String[] args) {
 
 
