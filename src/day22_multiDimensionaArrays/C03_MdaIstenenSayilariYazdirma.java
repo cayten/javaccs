@@ -11,7 +11,7 @@ public class C03_MdaIstenenSayilariYazdirma {
 
          */
 
-        int[][] sayilar ={{1,5,6,9,4},{2,5,5,8}, {3, 1, 6},{1,1,1,1,1}};
+        int[][] sayilar ={{1,5,6,9,4},{2,5,5,8}, {3, 1, 6},{1,1,1,1,1,1}};
 
         int istenenToplam=0;
         for (int i = 0; i < sayilar.length ; i++) {
