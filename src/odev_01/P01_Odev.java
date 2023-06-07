@@ -16,7 +16,9 @@ public class P01_Odev {
 
         System.out.println("sayilarin toplami: " + (sayi + sayi2));
 
-
+        
+        
+        
 
 
 
