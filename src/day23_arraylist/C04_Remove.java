@@ -17,6 +17,7 @@ public class C04_Remove {
         urunler.add("tutku");
         urunler.add("cekirdek");
         urunler.add("kola");
+        urunler.add("hanimeller");
         System.out.println(urunler);//[nutella, tutku, cekirdek, kola]
         System.out.println(urunler.remove("tutku"));//true
         System.out.println(urunler);//[nutella, cekirdek, kola]
