@@ -14,7 +14,7 @@ public class C01_ArraydenArrayListYapma {
     2- Arrays.asList() kullanabiliriz
        Ancak bu method'un 2 tane kotu yan etkisi var
        - Arrays class'i kullanildigi icin array ozellikleri gecerli olur
-         dolayisiyla list'te olan add, remove gibi size'i degistiren method'lar
+         dolayisiyla list'te olan add, remove gibi size'i degistiren method'lar.
          bu sekilde olusturulan list'lerde kullanilamaz
        - kaynak olan array ile urun olan list ozdeslestirilir
          birinde yapilan degisiklik, otomatik olarak digerine de islenir
