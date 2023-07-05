@@ -1,21 +1,32 @@
 package practice_03;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class C02_Odev {
     public static void main(String[] args) {
-        /*  you have a string "HeySiri"
-         * with arrays change it to "ByeSiri" and write changing array
-         *(String iniz: "HeySiri"  Diziyi "ByeSiri" ye cevirin )
-         *
-         */
-        String [] kelime1= new String[1];
-        String kelime="HeySiri";
-        kelime=kelime.replace("Hey","Bye");
+        /*  Problem Tanımı
+Bir işçinin işi bitirme süresini ve toplam işçi sayısını alarak, işin bitme süresini
+hesaplayan kodu yazınız.
+Örneğin, Bir işçi bir işi 10 günde yapabilmektedir.
+Buna göre 2 işçi aynı işi kaç günde yapar?
 
-        System.out.println(kelime);
-        kelime1[0]=kelime;
-        System.out.println(Arrays.toString(kelime1));
+Örnek Ekran Çıktısı
+ Bir işçi işi kaç günde bitirmektedir? 10
+ Toplam kaç işçi çalışacak? 2
+İşin bitme süresi 5 gündür.*/
+
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Bir işçinin işi bitirme süresini yaziniz ");
+        double isBitirme= scan.nextDouble();
+
+        System.out.println("toplam işçi sayısını yaziniz");
+        double isciSayisi=scan.nextDouble();
+
+        double islem= isBitirme/isciSayisi;
+        System.out.println(islem);
+
+
+
 
     }
 }

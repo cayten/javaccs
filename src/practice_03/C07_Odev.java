@@ -1,31 +1,50 @@
 package practice_03;
 
+import java.util.Scanner;
+
 public class C07_Odev {
     public static void main(String[] args) {
         /*
-         *  String 2D array olustur
-         *  {{"$12" , "$22" , "0$"},   {"€9" , "€40" , "$1" },  {"€12", "$2","$0"}}
-         *  String de $ varsa 3.2 ile carp
-         *  String de € varsa 4.2 ile carp
-         *  elemanlarin toplamini double olarak yazdir
-         */
+   0 ~ 9 arasındaki sayilari cevirebilen bir java programi yazin
+  kelimelere, sayı 9'dan buyuk veya sifirdan kucukse,
+  cikis "Gecersiz" olmalidir
+  NestedIf ve Ternary kullanarak 2 yolla da cozunuz
+*/
 
-        String [][] sayilar={{"$12" , "$22" , "0$"},   {"€9" , "€40" , "$1" },  {"€12", "$2","$0"}};
+        Scanner scan=new Scanner(System.in);
+        System.out.println("lutfen bir rakam giriniz");
+        int rakam=scan.nextInt();
 
-        double carpim=1;
-        for (int i = 1; i <=3 ; i++) {
-            for (int j = 1; j <=3 ; j++) {
+        if (rakam==0){
+            System.out.println("sifir");
+        } else if (rakam==1) {
+            System.out.println("bir");
 
-                if (sayilar[i][j].contains("$")){
+        } else if (rakam==2) {
+            System.out.println("iki");
 
-                }
+        } else if (rakam==3) {
+            System.out.println("uc");
 
-            }
+        } else if (rakam == 4) {
+            System.out.println("dort");
+        } else if (rakam==5) {
+            System.out.println("bes");
 
-        }
+        } else if (rakam==6) {
+            System.out.println("alti");
 
+        } else if (rakam==7) {
+            System.out.println("yedi");
 
+        } else if (rakam==8) {
+            System.out.println("sekiz");
 
+        } else if (rakam==9) {
+            System.out.println("dokuz");
+
+        }else
+            System.out.println("girdiginiz sayi rakam degildir");
 
 
     }
