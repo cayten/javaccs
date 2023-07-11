@@ -28,5 +28,17 @@ public class C03_Date {
         System.out.println(tarih.plusYears(5).plusMonths(3).plusDays(12));//2028-10-18
 
         System.out.println(tarih.minusWeeks(20));//2023-02-16
+
+        System.out.println(tarih.isAfter(tarih2));// ture
+
+        if (tarih2.isAfter(tarih3)){
+            System.out.println(tarih3+" tarihinde dogan daha buyuk");
+
+        }else if (tarih2.isBefore(tarih3)){
+            System.out.println(tarih2+" tarihinde dogan daha buyuk");
+
+        }else {
+            System.out.println("iki tarih birbiri ile ayni");
+        }
     }
 }
