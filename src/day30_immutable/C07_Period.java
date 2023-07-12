@@ -15,6 +15,5 @@ public class C07_Period {
         System.out.println(period);//P-51Y-5M-19D
 
         System.out.println(period.getYears());//-51
-        System.out.println(period.getYears());//-51
     }
 }
