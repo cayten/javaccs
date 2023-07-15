@@ -1,39 +1,85 @@
 package day36_inheritanceDataTypeKullanimi;
 
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class DIsci extends BMuhasebe {
 
     protected int saatUcreti=11;
     protected int gunlukMesai=7;
 
-    protected void maasIsci(){
 
-        System.out.println("Iscile: "+(30*saatUcreti*gunluMesai));
 
-    }
 
-    protected void ozelSigortaIsci(){
-        System.out.println("Isciler %70 indirimli ozel sigorta yaptirabilir");
-    }
+        protected void maasIsci(){
+            System.out.println("Isciler : "+ (30*saatUcreti*gunlukMesai)+ " maas alir");
+        }
 
-    public static void main(String[] args) {
-        BMuhasebe sc1=new BMuhasebe();
+        protected void ozelSigortaIsci(){
+            System.out.println("Memurlar %70 indirimli ozel sigorta yaptirabilir");
+        }
 
-        /* BIr obje olusturulurken Data turu
-        ve constructor ayni class dan ise direkt o class a gidiyorduk
 
-        Eger data turu ve cons. farkli ise oncelikle
-        data turunun oldugu class agideriz.
+
+        public static void main(String[] args) {
+
+            BMuhasebe isc1= new DIsci();
+
+        /*
+        Bir obje olusturulurken
+        Data turu ve constructor ayni class'dan ise
+        direk  class'a gidiyorduk
+
+        Eger data turu ve constructor farkli ise
+        Obje constructor'in oldugu class'in objesidir
+        ancak bizden istenen
+        Isci class'indaki spesifik ozellikler degil
+        bir iscinin AMuhasebe class'indaki
+        tum calisanalrla beraber sahip oldugu
+        genel ozellikleri yazdirir
          */
 
-        System.out.println(sc1.gunluMesai);//
-        System.out.println(sc1.saatUcreti);//
+            System.out.println(isc1.gunluMesai);// AMuhasebe -> 8
+            System.out.println(isc1.saatUcreti);// AMuhasebe -> 10
+            isc1.maas();// AMuhasebe -> Memurlar : 2400 maas alir
+            isc1.ozelSigorta();// AMuhasebe -> Memurlar %60 indirimli ozel sigorta yaptirabilir
+            isc1.sigorta();// APersonel -> Tum personelimize sigorta yapilir
+            System.out.println(isc1.isim);//  APersonel -> Isim belirtilmedi
+            System.out.println(isc1.soyisim);//  APersonel -> Soyisim belirtilmedi
+            System.out.println(isc1.departman);// APersonel -> Departman belirtilmedi
 
-        sc1.maas();//
-        sc1.ozelSigorta();//
-        sc1.sigorta();//
+            System.out.println("***********************************************");
 
-        System.out.println(sc1.isim);//
-        System.out.println(sc1.soyisim);//
-        System.out.println(sc1.departman);//
+            APersonel isc2=new DIsci();
+
+            //      System.out.println(isc2.gunlukMesai);//
+            //       System.out.println(isc2.saatUcreti);//
+            isc2.maas();// AMuhasebe -> Memurlar : 2400 maas alir
+            //       isc2.ozelSigorta();// AMuhasebe ->
+            isc2.sigorta();// APersonel -> Tum personelimize sigorta yapilir
+            System.out.println(isc2.isim);//  APersonel -> Isim belirtilmedi
+            System.out.println(isc2.soyisim);//  APersonel -> Soyisim belirtilmedi
+            System.out.println(isc2.departman);// APersonel -> Departman belirtilmedi
+
+        /*
+        Eger data turu olan class'da aradigimiz ozellik yoksa
+        varsa onun parent'ina gidebilir
+        ama child'a donus olmaz
+        Aradigi ozelligi bulamazsa CTE verir
+         */
+
+            List<String> list1=new LinkedList<>();
+            Deque<String> list2= new LinkedList<>();
+            Queue<String> list3= new LinkedList<>();
+
+        /*
+        Hepsi LinkedList olsa da
+        list1 List gibi davranir
+        list2 Deque gibi davranr
+        list3 Queue gibi davranir
+         */
+
+        }
     }
-}
